@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar color="n2">
+    <ion-title>
+      Chart แบบโดนัท
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div style="display: block">
+    <canvas baseChart
+                [data]="doughnutChartData"
+                [labels]="doughnutChartLabels"
+                [chartType]="doughnutChartType"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></canvas>
+                
+  </div>
+</ion-content>
